@@ -134,6 +134,50 @@
     @media (max-width: 850px) { .lab, .below { grid-template-columns: 1fr; } .principles { grid-template-columns: repeat(4, 1fr); } .track { grid-template-columns: repeat(8, 1fr); } .code { font-size: 1.15rem; } }
     @media (max-width: 560px) { .shell { width: calc(100% - 28px); padding-top: 20px; } .key-guide { display: none; } h1 { font-size: 1.9rem; } .course-tag { font-size: .82rem; letter-spacing: .01em; } .sim-card { padding: 17px; } .sim-head { flex-wrap: wrap; gap: 10px; } .code { font-size: .93rem; padding: 20px 8px; margin: 0 12px; } .for-parts { margin: 16px 12px; gap: 6px; } .part { min-height: auto; padding: 13px 8px; } .part code { font-size: 1rem; } .part span { font-size: .875rem; } .concept-note { margin: 0 12px 15px; padding: 12px 5px; } .track { grid-template-columns: repeat(4, 1fr); } .principles { grid-template-columns: 1fr 1fr; } .principle-card, .challenge { padding: 18px; } .actions { gap: 8px; } .btn { padding: 0 13px; font-size: .94rem; } .reason { display: block; margin: 2px 0 0; } }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+  
+    /* Keep the embedded experiment in the same readable scale as course pages. */
+    html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+    body { font-size: 14px; min-width: 0; }
+    h1 { font-size: clamp(24px, 2.7vw, 34px); line-height: 1.4; }
+    .lede { font-size: 14px; line-height: 1.85; }
+    .card-label { font-size: 14px; }
+    .code-language, .key-guide { font-size: 12px; }
+    .code { font-size: 15px; line-height: 1.9; }
+    .part code { font-size: 16px; }
+    .part span, .concept-note, .sim-head p, .reading .tiny, .reason, .track-title, .principle span, .challenge p, .feedback { font-size: 13px; line-height: 1.75; }
+    .sim-head h2 { font-size: 19px; line-height: 1.5; }
+    .state-chip, .track-title b, .btn, .answer { font-size: 14px; }
+    .reading strong { font-size: 34px; }
+    .reading.judgement strong { font-size: 14px; line-height: 1.7; }
+    .reading strong .unit { font-size: 14px; }
+    .sample .number { font-size: 12px; }
+    .sample .temp { font-size: 16px; }
+    .principle-card h2, .challenge h2 { font-size: 18px; line-height: 1.55; }
+    .principle b { font-size: 21px; }
+    .exit-result b { font-size: 15px; line-height: 1.6; }
+    .exit-result span { font-size: 13px; line-height: 1.8; }
+    @media (max-width: 560px) {
+      h1 { font-size: 22px; }
+      .course-tag { font-size: 12px; }
+      .code { font-size: 13px; line-height: 1.85; }
+      .part code { font-size: 14px; }
+      .part span { font-size: 12.5px; margin-top: 8px; }
+      .sim-head h2 { font-size: 17px; }
+      .sim-head p { min-height: auto; }
+      .reading:not(.judgement) { min-height: 100px; padding: 14px; }
+      .reading strong { font-size: 28px; margin-top: 8px; }
+      .reading.judgement strong { font-size: 14px; }
+      .reading .tiny { font-size: 12.5px; }
+      .sample .temp { font-size: 15px; }
+      .principle b { font-size: 19px; }
+      .principle-card h2, .challenge h2 { font-size: 16px; }
+      .btn { font-size: 13px; min-height: 44px; padding: 0 12px; }
+    }
+    @media (max-width: 360px) {
+      .code { font-size: 12.5px; }
+      .part { padding: 12px 8px; }
+      .reading strong { font-size: 26px; }
+    }
   </style>
 </head>
 <body>
