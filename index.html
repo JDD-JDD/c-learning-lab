@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a121b">
+  <meta name="description" content="谭浩强《C程序设计》第五版配套互动学习实验室。从智能夜灯、充电柜到采样统计，逐步观察程序、动手验证原理。">
+  <title>C语言程序设计—学习实验室</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23132432'/%3E%3Ctext x='15' y='47' font-family='monospace' font-size='43' font-weight='bold' fill='%2375efd0'%3EC%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到学习内容</a>
+  <div class="backdrop" id="backdrop"></div>
+  <aside class="sidebar" id="sidebar" aria-label="实验室目录">
+    <a class="brand" href="#home"><span class="brand-mark">C<span>·</span></span><span>C语言程序设计<small>学习实验室 · PROGRAMMING LAB</small></span></a>
+    <div class="sidebar-caption">C语言程序设计 / 谭浩强 · 第五版</div>
+    <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="查找章节、知识点" aria-label="查找章节、知识点"></label>
+    <nav id="navigation" aria-label="章节导航"></nav>
+    <p id="no-results" hidden>没有找到章节，试试“数组”或“文件”。</p>
+    <div class="sidebar-bottom"><div class="progress-heading"><span>我的学习进度</span><b id="side-progress">0 / 10</b></div><div class="progress-track"><i id="side-bar"></i></div><button class="text-button" id="export">导出学习记录 ↗</button><small>记录仅保存在当前浏览器</small></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><button class="icon-button menu-button" id="menu" aria-label="打开实验室目录" aria-expanded="false">☰</button><div class="breadcrumb">学习实验室 <span>/</span> <b id="crumb">课程首页</b></div><button class="profile" id="profile"><span class="avatar" id="avatar">同</span><span id="profile-name">同学</span><span class="profile-arrow">⌄</span></button></header>
+    <main id="main" tabindex="-1"></main>
+    <footer>从看懂程序，到用程序解决问题。<span>教材章节参考 <a href="https://www.tup.tsinghua.edu.cn/booksCenter/bookcatalog?id=07645004" target="_blank" rel="noopener">谭浩强《C程序设计》第五版</a> · 案例为教学模拟</span></footer>
+  </div>
+  <dialog id="profile-dialog"><form id="profile-form"><span class="eyebrow">WELCOME TO THE LAB</span><h2>你好，未来的程序设计者。</h2><p>留下一个昵称，实验室会记住你的探索进度。</p><label for="nickname">学习昵称</label><input id="nickname" maxlength="16" autocomplete="nickname" placeholder="例如：小王" required><small>无需账号或密码；昵称和进度只保存在本机。</small><div class="dialog-actions"><button type="button" class="button secondary" id="close-profile">稍后设置</button><button class="button primary" type="submit">开始探索 →</button></div></form></dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <noscript>请在浏览器中开启 JavaScript，以使用程序模拟和互动自测。</noscript>
+  <script src="chapters.js"></script>
+  <script src="knowledge.js"></script>
+  <script src="knowledge-ui.js"></script>
+  <script src="games.js"></script>
+  <script src="guides.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
